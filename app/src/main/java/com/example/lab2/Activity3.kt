@@ -39,5 +39,12 @@ class Activity3 : AppCompatActivity() {
         txtQt.setText(quantity.toString());
     }
 
+    public fun subBtnClk(view:View){
+        if(quantity>0){
+            quantity--;
+            txtQt.setText(quantity.toString());
+        }
+    }
+
 
 }
