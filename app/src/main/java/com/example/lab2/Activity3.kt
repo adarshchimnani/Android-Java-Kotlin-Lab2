@@ -46,5 +46,33 @@ class Activity3 : AppCompatActivity() {
         }
     }
 
+    public fun OrderOnClick(view: View){
 
+        if(creamCheck.isChecked){
+            cream="Yes";
+            price++;
+        }
+        else{
+            cream="No";
+        }
+
+        if(chocoCheck.isChecked){
+            choco="Yes";
+            price++;
+        }
+        else{
+            choco="No";
+        }
+
+        price = (price*quantity) + (quantity*4);
+
+        txtSummary.setText("Add Whipped Cream?" + cream +
+                       "\nAdd Chocolate? "+ choco +
+                       "\nQuanity: " + quantity +
+
+                    "\n\nPrice: " + price + "\nTHANK YOU!");
+
+        price = 0;
+
+    }
 }
