@@ -34,5 +34,10 @@ class Activity3 : AppCompatActivity() {
         txtSummary = findViewById(R.id.txtSummary);
     }
 
+    public fun addBtnClk(view:View){
+        quantity++;
+        txtQt.setText(quantity.toString());
+    }
+
 
 }
